@@ -64,37 +64,37 @@ class Register {
 
         // Validate name
         if (!name) {
-            this.showError('name', 'Full name is required');
+            this.showError('name', Messages.validation.name.required);
             isValid = false;
         } else if (name.length < 2) {
-            this.showError('name', 'Full name must be at least 2 characters');
+            this.showError('name', Messages.validation.name.minLength);
             isValid = false;
         }
 
         // Validate email
         if (!email) {
-            this.showError('email', 'Email is required');
+            this.showError('email', Messages.validation.email.required);
             isValid = false;
         } else if (!this.validateEmail(email)) {
-            this.showError('email', 'Please enter a valid email address');
+            this.showError('email', Messages.validation.email.invalid);
             isValid = false;
         }
 
         // Validate password
         if (!password) {
-            this.showError('password', 'Password is required');
+            this.showError('password', Messages.validation.password.required);
             isValid = false;
         } else if (password.length < 8) {
-            this.showError('password', 'Password must be at least 8 characters');
+            this.showError('password', Messages.validation.password.minLength);
             isValid = false;
         }
 
         // Validate confirm password
         if (!confirmPassword) {
-            this.showError('confirmPassword', 'Please confirm your password');
+            this.showError('confirmPassword', Messages.validation.confirmPassword.required);
             isValid = false;
         } else if (password !== confirmPassword) {
-            this.showError('confirmPassword', 'Passwords do not match');
+            this.showError('confirmPassword', Messages.validation.confirmPassword.mismatch);
             isValid = false;
         }
 
@@ -113,7 +113,7 @@ class Register {
                 confirmPassword: formData.get('confirmPassword')
             };
             
-            console.log('Registration Form Data:', data);
+            console.log(Messages.console.registrationData, data);
         }
     }
 }
