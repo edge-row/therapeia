@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapeía</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Animations CSS -->
+    <link rel="stylesheet" href="assets/animations.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen">
+        <div id="navbar"></div>
+
+        <main class="flex flex-col items-center justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" style="min-height:95vh;">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4 animate-fade-in-up">
+                About
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto text-center animate-fade-in-up animate-delay-200">
+                Therapeía is a comprehensive platform designed to empower mental health professionals in managing their practice with ease and efficiency. We combine modern technology with intuitive design to create tools that support therapists, counselors, and mental health practitioners in delivering exceptional care to their clients.
+            </p>
+        </main>
+
+        <footer class="bg-gray-100 mt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <p class="text-center text-gray-600">
+                    © <span id="year"></span> Therapeía built by Edro Gonzales. Copyrighted 2025. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="components/Navbar.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

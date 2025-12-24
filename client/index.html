@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>Therapeía</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Animations CSS -->
+    <link rel="stylesheet" href="assets/animations.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen">
+        <div id="navbar"></div>
+
+        <main class="flex flex-col items-center justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" style="min-height:95vh;">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4 animate-fade-in-up">
+                Welcome to Therapeía
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-in-up animate-delay-200">
+                A platform for mental health professionals to manage their practice
+            </p>
+            <!-- add hover animation -->
+            <a href="login.html"><button class="text-white px-6 py-3 rounded-md animate-fade-in-up animate-delay-300 button-hover font-medium" style="background-color: #2d5016;">Get Started</button></a>
+        </main>
+
+        <footer class="bg-gray-100 mt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <p class="text-center text-gray-600">
+                    © <span id="year"></span> Therapeía built by Edro Gonzales. Copyrighted 2025.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="components/Navbar.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
